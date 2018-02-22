@@ -32,6 +32,7 @@
 # ==============================================================================
 #
 # Change this, if PoC solutions and PoC projects are used
+python --version
 $PoC_RelPath =					"."		# relative path to PoC root directory
 $PoC_Solution =					""		# solution name
 
