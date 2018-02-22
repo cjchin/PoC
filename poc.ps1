@@ -33,6 +33,8 @@
 #
 # Change this, if PoC solutions and PoC projects are used
 python --version
+pip install py-flags
+pip install colorama
 $PoC_RelPath =					"."		# relative path to PoC root directory
 $PoC_Solution =					""		# solution name
 
