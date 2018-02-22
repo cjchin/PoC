@@ -50,7 +50,7 @@ $PoCRootDir =						Convert-Path (Resolve-Path ($PSScriptRoot + "\" + $PoC_RelPat
 Import-Module "$PoCRootDir\$PoC_WrapperDir\$PoC_Module.psm1" -ArgumentList @($PoCRootDir)
 
 # scan script parameters and mark environment to be loaded
-$Debug, $PyWrapper_LoadEnv = Get-PoCEnvironmentArray $args
+$Debug = true, $PyWrapper_LoadEnv = Get-PoCEnvironmentArray $args
 # execute vendor and tool pre-hook files if present
 Invoke-OpenEnvironment $PyWrapper_LoadEnv | Out-Null
 
