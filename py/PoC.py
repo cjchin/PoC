@@ -44,7 +44,6 @@ from shutil                             import copy as shutil_copy
 from sys                                import argv as sys_argv
 from textwrap                           import dedent
 
-from Compiler                           import CompilerException, CompileSteps
 from Base.Exceptions                    import ExceptionBase, CommonException, PlatformNotSupportedException, EnvironmentException, NotConfiguredException
 from Base.Logging                       import ILogable, Logger, Severity
 from Base.Project                       import VHDLVersion
@@ -75,6 +74,7 @@ from lib.ExtendedConfigParser           import ExtendedConfigParser
 from lib.Functions                      import Init, Exit
 from lib.Parser                         import ParserException
 from lib.pyAttribute                    import Attribute
+from Compiler                           import CompilerException, CompileSteps
 
 
 __author__ =      "Patrick Lehmann, Martin Zabel"
