@@ -10,6 +10,7 @@ install:
   - ps: Write-Host "Installing requirements..."
   - ps: python --version
   - ps: python -m pip install pip --upgrade
+  - ps: python -m pip install py-flags
   - ps: python -m pip install -r .\requirements.txt
   - ps: python -m pip list --format=columns
   - ps: Write-Host "Configuring PoC..."
